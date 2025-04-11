@@ -1,0 +1,22 @@
+<div>
+  <ng-content>Item's List</ng-content>
+  {{ itemTemplateRef.prefix }}
+  <ul>
+    @for(item of items(); track item.id) {
+      <ng-conteiner [ngTemplateOutlet]="itemTemplate
+       || itemTemplateRef?.template
+       || itemInputTemplate()
+       || itemTemplateConst
+       || defaultItemTemplate"
+                    [ngTemplateOutletContext]="{$implicit: item}"></ng-conteiner>
+
+    }
+  </ul>
+<!--  <ng-content select="description">Choose Item</ng-content>-->
+  <ng-content select="[description]">Choose Item</ng-content>
+</div>
+<ng-template #defaultItemTemplate let-item>
+  <li>
+    {{ item.name }}
+  </li>
+</ng-template>

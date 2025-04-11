@@ -1,0 +1,24 @@
+@import "variables";
+@import "colors";
+
+:host {
+  display: block;
+  margin: $default-margin;
+  .container {
+    padding: $small-padding;
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        margin-right: $small-padding;
+        cursor: pointer;
+        &.active {
+          color: $active-item-color;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
