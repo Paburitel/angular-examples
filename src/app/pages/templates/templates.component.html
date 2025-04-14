@@ -1,0 +1,36 @@
+<div>
+  @for (list of items; track $index) {
+<!--  [itemInputTemplate]="itemTemplate"-->
+  <app-list-ex [items]="list">
+    <h5>Companies list</h5>
+<!--    <ng-template #itemTemplateConst let-item>-->
+<!--      <li>{{ item.name }} / {{ item.id }} / CONST</li>-->
+<!--    </ng-template>-->
+
+<!--    <ng-template listItemDirective [prefix]="$index + 1 + ' IN LIST'" let-item>-->
+<!--      <li>{{ item.name }} / {{ item.id }} / [DIRECTIVE]</li>-->
+<!--    </ng-template>-->
+    <list-item-directive
+      [prefix]="$index + 1 + ' IN LIST'"
+    >
+      <ng-template let-item>
+        <li>{{ item.name }} / {{ item.id }} / DIRECTIVE</li>
+      </ng-template>
+    </list-item-directive>
+
+
+<!--    <ng-container ngProjectAs="[description]">-->
+<!--      <div>Choose you companies</div>-->
+<!--      <div>And apply</div>-->
+
+<!--    </ng-container>-->
+    <div description>
+      <div>Choose you companies</div>
+      <div>And apply</div>
+    </div>
+  </app-list-ex>
+  }
+</div>
+<!--<ng-template #itemTemplate let-item>-->
+<!--  <li>{{ item.name }} / {{ item.id }} / INPUT</li>-->
+<!--</ng-template>-->

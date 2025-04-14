@@ -1,0 +1,11 @@
+<div class="container">
+  <ul>
+    @for (tab of tabs(); track tab.id) {
+      <li class="item"
+          [ngClass]="{'active': tab?.id === activeTab()?.id}"
+          (click)="onTabClick(tab)">
+        <span>{{ tab.title }}</span>
+      </li>
+    }
+  </ul>
+</div>

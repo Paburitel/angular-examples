@@ -1,0 +1,12 @@
+@import "colors";
+@import "variables";
+
+:host {
+  .main {
+    .header {
+      padding: $default-padding;
+      background-color: $dark-color;
+      color: $medium-color;
+    }
+  }
+}
