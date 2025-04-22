@@ -16,7 +16,6 @@ export class AppComponent {
   private readonly router = inject(Router)
 
   public onTabClick({id}: Tab) {
-    console.log('id', id);
     this.router.navigate([id]);
   }
 }
