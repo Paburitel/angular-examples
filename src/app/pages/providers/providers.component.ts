@@ -27,9 +27,8 @@ export class ProvidersComponent {
   private readonly route = inject(ActivatedRoute);
 
   public onTabClick({id}: Tab) {
-    console.log('id', id);
     this.router.navigate([id], {
-      relativeTo: this.route
+      relativeTo: this.route.parent
     });
   }
 }
