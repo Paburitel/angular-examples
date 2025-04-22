@@ -21,6 +21,6 @@ export const routes: Routes =
       }]
 
     },
-    {path: '**', redirectTo: 'new'}
+    {path: '**', redirectTo: ''}
   ];
 
