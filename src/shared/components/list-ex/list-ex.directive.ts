@@ -13,7 +13,7 @@ export class ListItemContentDirective implements AfterViewInit {
   }
 
   public ngAfterViewInit() {
-    console.log('TEMPLATE', this.template);
-    console.log('ELEMENT REF', this.elementRef);
+    // console.log('TEMPLATE', this.template);
+    // console.log('ELEMENT REF', this.elementRef);
   }
 }

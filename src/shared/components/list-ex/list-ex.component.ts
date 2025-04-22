@@ -35,9 +35,9 @@ export class ListExComponent implements AfterViewInit  {
   public itemInputTemplate = input<TemplateRef<any>>();
 
   public ngAfterViewInit() {
-    console.log('IN COMPONENT');
-    console.log('itemTemplate', this.itemTemplate);
-    console.log('itemTemplateRef', this.itemTemplateRef);
+    // console.log('IN COMPONENT');
+    // console.log('itemTemplate', this.itemTemplate);
+    // console.log('itemTemplateRef', this.itemTemplateRef);
   }
 
 }
