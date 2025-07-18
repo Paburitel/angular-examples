@@ -17,4 +17,8 @@ export const NAVIGATION_ROUTES = [
     id: RoutPathEnum.Providers,
     title: 'Providers'
   },
+  {
+    id: RoutPathEnum.Observable,
+    title: 'Observable'
+  },
 ]
